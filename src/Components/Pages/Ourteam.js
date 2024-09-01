@@ -36,9 +36,8 @@ const teamMembers = [
     name: "Alice Johnson",
     message: "Focused on continuous improvement.",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHr74Pjdj__bQPnZK-BFujbwgnP1t5PIqkig&s", // Replace with actual image path
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHr74Pjdj__bQPnZK-BFujbwgnP1t5PIqkig&s",
   },
-  // Add more team members as needed
 ];
 
 // Custom styles for team card
@@ -70,17 +69,14 @@ const TransparentText = styled(Typography)(({ theme }) => ({
   top: "20%",
   left: "10%",
   transform: "translateY(-50%)",
-  color: "#fff", // White color
-  fontWeight: "bold", // Bold text
-  background: "none", // No background
+  color: "black",
+  fontWeight: "bold",
+  background: "none",
   padding: theme.spacing(2),
   borderRadius: theme.shape.borderRadius,
 }));
 
 const OurTeam = () => {
-  const theme = useTheme();
-
-  // Slider settings for react-slick
   const settings = {
     dots: true,
     infinite: true,
@@ -90,8 +86,8 @@ const OurTeam = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "ease-in-out",
-    centerMode: true, // Centers the active slide
-    centerPadding: "0px", // Removes extra padding
+    centerMode: true,
+    centerPadding: "0px",
     responsive: [
       {
         breakpoint: 1024,
@@ -120,7 +116,6 @@ const OurTeam = () => {
           {teamMembers.map((member) => (
             <Box key={member.id} sx={{ p: 2 }}>
               {" "}
-              {/* Box for spacing around each card */}
               <TeamCard>
                 <CardMedia
                   component="img"

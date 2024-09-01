@@ -18,7 +18,6 @@ import Donation from "../Image/DonateImage.jpg";
 import Header from "../Header";
 import Footer from "../Footer/Footer";
 
-// Styled components for various elements
 const HeaderImage = styled("img")(({ theme }) => ({
   width: "100%",
   height: "auto",
@@ -35,12 +34,12 @@ const WebcamContainer = styled("div")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   marginTop: theme.spacing(2),
-  border: `2px solid ${theme.palette?.primary?.main || "#1976d2"}`, // Fallback color
+  border: `2px solid ${theme.palette?.primary?.main || "#1976d2"}`,
   padding: theme.spacing(2),
-  borderRadius: theme.shape?.borderRadius || 4, // Fallback radius
+  borderRadius: theme.shape?.borderRadius || 4,
   boxShadow: theme.shadows
     ? theme.shadows[5]
-    : "0px 4px 6px rgba(0, 0, 0, 0.1)", // Fallback shadow
+    : "0px 4px 6px rgba(0, 0, 0, 0.1)",
 }));
 
 const CaptureButton = styled(Button)(({ theme }) => ({
@@ -48,10 +47,10 @@ const CaptureButton = styled(Button)(({ theme }) => ({
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-  backgroundColor: theme.palette?.primary?.main || "#1976d2", // Fallback color
-  color: theme.palette?.common?.white || "#fff", // Fallback color
+  backgroundColor: theme.palette?.primary?.main || "#1976d2",
+  color: theme.palette?.common?.white || "#fff",
   "&:hover": {
-    backgroundColor: theme.palette?.primary?.dark || "#1565c0", // Fallback color
+    backgroundColor: theme.palette?.primary?.dark || "#1565c0",
   },
 }));
 
@@ -62,16 +61,15 @@ const FormControlStyled = styled(FormControl)(({ theme }) => ({
 const StyledTypography = styled(Typography)(({ theme }) => ({
   fontFamily: "'Poppins', sans-serif",
   fontWeight: 700,
-  color: theme.palette?.primary?.main || "#1976d2", // Fallback color
+  color: theme.palette?.primary?.main || "#1976d2",
   textAlign: "center",
   marginTop: theme.spacing(2),
 }));
 
-// Styles for the animated and colorful card
 const StyledCard = styled(Card)(({ theme }) => ({
   background: `linear-gradient(135deg, ${
     theme.palette?.primary?.light || "#42a5f5"
-  }, ${theme.palette?.primary?.dark || "#1565c0"})`, // Fallback gradient colors
+  }, ${theme.palette?.primary?.dark || "#1565c0"})`,
   color: "#fff",
   borderRadius: "15px",
   boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
@@ -144,20 +142,18 @@ const DonationPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission, including uploaded image if necessary
   };
 
   return (
     <>
       <Header />
-      {/* Header Section with Image */}
+
       <Box sx={{ marginTop: 8 }}>
         <HeaderImage src={Donation} alt="Donation Header" />
       </Box>
 
       <Grid container spacing={3}>
         <Grid item xs={12} md={8}>
-          {/* Donation Form */}
           <Card>
             <CardContent>
               <StyledTypography variant="h4" gutterBottom>
@@ -190,7 +186,7 @@ const DonationPage = () => {
                       <Input
                         type="file"
                         onChange={handleFileChange}
-                        inputProps={{ accept: "image/*" }} // Allow only images
+                        inputProps={{ accept: "image/*" }}
                       />
                       {file && (
                         <>
@@ -282,7 +278,6 @@ const DonationPage = () => {
         </Grid>
 
         <Grid item xs={12} md={4}>
-          {/* Stylish Bank Account Details Card */}
           <StyledCard>
             <StyledCardContent>
               <img
