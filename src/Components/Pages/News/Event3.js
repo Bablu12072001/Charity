@@ -83,15 +83,16 @@ function Carding() {
   };
 
   return (
-    <Box sx={{ p: 2 }}>
+    <Box sx={{ p: 2, background: 'linear-gradient(to right,#fff8e1,#FFFF)' }}>
       <Typography
         component="div"
         sx={{
           padding: { xs: 2, sm: 4 },
           margin: { xs: 1, sm: 2 },
-          fontSize: { xs: "16px", sm: "18px", md: "20px" },
+          fontSize: { xs: "18px", sm: "20px", md: "22px" },
           lineHeight: { xs: 1.4, sm: 1.6 },
           textAlign: "center",
+          fontWeight: 'bold'
         }}
       >
         Besides the numerous projects Sood Charity Foundation has started, our
@@ -106,7 +107,7 @@ function Carding() {
         sx={{
           padding: { xs: 1, sm: 2 },
           margin: { xs: 1, sm: 2 },
-          fontSize: { xs: "14px", sm: "16px" },
+          fontSize: { xs: "16px", sm: "18px" },
           textAlign: "center",
         }}
       >
@@ -116,9 +117,10 @@ function Carding() {
         sx={{
           padding: { xs: 1, sm: 2 },
           margin: { xs: 1, sm: 2 },
-          fontSize: { xs: "16px", sm: "18px", md: "20px" },
+          fontSize: { xs: "18px", sm: "20px", md: "22px" },
           lineHeight: { xs: 1.4, sm: 1.6 },
           textAlign: "center",
+          fontWeight: 'bold'
         }}
       >
         Recently, Sonu Sood initiated ‘Sanjeevani’ – A Shot of Life. The
@@ -185,11 +187,15 @@ function Carding() {
               <CardContent>
                 <Button
                   variant="contained"
-                  color="primary"
                   sx={{
+                    mt: 4,
                     borderRadius: "20px",
-                    padding: "8px 16px",
-                    fontSize: { xs: "12px", sm: "14px" },
+                    backgroundColor: "#ffd54f",
+                    color: "black",
+                    padding: "10px 20px",
+                    "&:hover": {
+                      backgroundColor: "#ffe082",
+                    },
                   }}
                 >
                   Read More

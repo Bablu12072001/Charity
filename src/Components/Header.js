@@ -32,7 +32,7 @@ const CustomLinkButton = styled(Button)(({ theme }) => ({
     bottom: 0,
     width: "100%",
     height: "2px",
-    backgroundColor: theme.palette.primary.main,
+    // backgroundColor: theme.palette.primary.main,
     transform: "scaleX(0)",
     transition: "transform 0.3s ease",
     transformOrigin: "bottom right",
@@ -50,7 +50,7 @@ const CustomButton = styled(Button)(({ theme }) => ({
   margin: "0 8px",
   transition: "background-color 0.3s ease, transform 0.3s ease",
   "&:hover": {
-    backgroundColor: theme.palette.primary.dark,
+    // backgroundColor: '',
     transform: "scale(1.05)",
   },
   // Adjust button size based on screen size
@@ -199,18 +199,20 @@ const Header = () => {
 
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <CustomButton
-            variant="contained"
-            color="primary"
+
+
             component={Link}
             to="/signup"
+            sx={{ backgroundColor: 'white', color: 'black' }}
           >
             Sign In
           </CustomButton>
           <CustomButton
             variant="contained"
-            color="secondary"
+
             component={Link}
             to="/donation"
+            sx={{ backgroundColor: '#ffd54f' }}
           >
             Donate
           </CustomButton>

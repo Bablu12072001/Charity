@@ -15,6 +15,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { Link } from "react-router-dom";
+import color from "material-ui-colors/dist/amber";
 
 // Keyframes for animations
 const fadeIn = keyframes`
@@ -52,14 +53,15 @@ const Title = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(2),
   fontWeight: "bold",
   textAlign: "center",
-  color: theme.palette.primary.main,
+  // color: theme.palette.primary.main,
+  color: 'black'
 }));
 
 const SignInButton = styled(Button)(({ theme }) => ({
-  background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-  color: "#fff",
+  background: `linear-gradient(45deg, ${'#ffb300'}, ${'#FFFFFF'})`,
+  color: "black",
   "&:hover": {
-    background: `linear-gradient(45deg, ${theme.palette.primary.dark}, ${theme.palette.secondary.dark})`,
+    background: `linear-gradient(45deg, ${'#ffcc80'}, ${'#ffcc80'})`,
   },
   transition: "background 0.3s ease-in-out",
 }));
@@ -70,6 +72,7 @@ const SocialButton = styled(IconButton)(({ theme }) => ({
   transition: "color 0.3s ease",
   "&:hover": {
     color: theme.palette.primary.main,
+    // color: '#ff8f00'
   },
   fontSize: "1.5rem", // Larger icon size
 }));
@@ -117,7 +120,7 @@ const SignInPage = () => {
             </SocialButton>
           </Box>
         </Box>
-        <Divider sx={{ my: 2 }}>Don't have an account?</Divider>
+        <Divider sx={{ my: 2, }}>Don't have an account?</Divider>
         <Button
           fullWidth
           variant="outlined"

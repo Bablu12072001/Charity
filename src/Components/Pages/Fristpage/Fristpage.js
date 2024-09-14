@@ -46,7 +46,7 @@ const Fristpage = () => {
   };
 
   return (
-    <Box sx={{ height: isMobileView ? 500 : 700 }}>
+    <Box sx={{ height: isMobileView ? 500 : 700, border: '#ffff00' }} >
       {loading ? (
         <CircularProgress />
       ) : (
@@ -75,6 +75,8 @@ const Fristpage = () => {
                     maxHeight: "100%",
                     width: "100%",
                     height: "auto",
+
+                    marginTop: 6,
                   }}
                 />
               </Box>

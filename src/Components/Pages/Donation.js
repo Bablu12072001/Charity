@@ -47,10 +47,10 @@ const CaptureButton = styled(Button)(({ theme }) => ({
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-  backgroundColor: theme.palette?.primary?.main || "#1976d2",
-  color: theme.palette?.common?.white || "#fff",
+  backgroundColor: ' #ffd54f' || "#fafafa",
+  color: 'black',
   "&:hover": {
-    backgroundColor: theme.palette?.primary?.dark || "#1565c0",
+    backgroundColor: ' #ffd54f' || "fafafa",
   },
 }));
 
@@ -61,15 +61,15 @@ const FormControlStyled = styled(FormControl)(({ theme }) => ({
 const StyledTypography = styled(Typography)(({ theme }) => ({
   fontFamily: "'Poppins', sans-serif",
   fontWeight: 700,
-  color: theme.palette?.primary?.main || "#1976d2",
+  // color: theme.palette?.primary?.main || "#1976d2",
+  color: 'black',
   textAlign: "center",
   marginTop: theme.spacing(2),
 }));
 
 const StyledCard = styled(Card)(({ theme }) => ({
-  background: `linear-gradient(135deg, ${
-    theme.palette?.primary?.light || "#42a5f5"
-  }, ${theme.palette?.primary?.dark || "#1565c0"})`,
+  background: `linear-gradient(135deg, ${'#ffd54f' || "#FFFFFF"
+    }, ${'#ffd54f' || "#FFFFFF"})`,
   color: "#fff",
   borderRadius: "15px",
   boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
@@ -103,7 +103,7 @@ const StyledCardContent = styled(CardContent)(({ theme }) => ({
     },
   },
   "& h5, & p": {
-    color: "#fff",
+    // color: "#fff",
   },
 }));
 
@@ -277,29 +277,31 @@ const DonationPage = () => {
           </Card>
         </Grid>
 
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4} >
           <StyledCard>
-            <StyledCardContent>
+            <StyledCardContent >
               <img
                 src={Scanner}
                 alt="Scanner"
                 style={{ width: "100%", marginTop: 16, borderRadius: 4 }}
               />
-              <Typography variant="h5" gutterBottom>
-                Bank Account Details
-              </Typography>
-              <Typography variant="body1">
-                <strong>Bank Name:</strong> Indian Bank
-              </Typography>
-              <Typography variant="body1">
-                <strong>Branch:</strong> Ayodhya
-              </Typography>
-              <Typography variant="body1">
-                <strong>Account Name:</strong> XXXXXXXX
-              </Typography>
-              <Typography variant="body1">
-                <strong>Account No:</strong> 1234567890
-              </Typography>
+              <Box >
+                <Typography variant="h5" gutterBottom sx={{ color: 'black' }}>
+                  Bank Account Details
+                </Typography>
+                <Typography variant="body1" sx={{ color: 'black' }}>
+                  <strong>Bank Name:</strong> Indian Bank
+                </Typography>
+                <Typography variant="body1" sx={{ color: 'black' }}>
+                  <strong>Branch:</strong> Ayodhya
+                </Typography>
+                <Typography variant="body1" sx={{ color: 'black' }}>
+                  <strong>Account Name:</strong> XXXXXXXX
+                </Typography>
+                <Typography variant="body1" sx={{ color: 'black' }}>
+                  <strong>Account No:</strong> 1234567890
+                </Typography>
+              </Box>
             </StyledCardContent>
           </StyledCard>
         </Grid>

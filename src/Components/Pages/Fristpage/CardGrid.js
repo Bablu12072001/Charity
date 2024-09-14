@@ -39,7 +39,7 @@ const CardData = [
 
 function Cardgrid() {
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container maxWidth="lg" sx={{ py: 4, background: '#fff8e1' }}>
       {/* Grid container to manage responsiveness */}
       <Grid container spacing={4} justifyContent="center" alignItems="center">
         {CardData.map((card) => (
@@ -75,11 +75,11 @@ function Cardgrid() {
                   <Button
                     sx={{
                       borderRadius: "20px",
-                      backgroundColor: "#6EC1E4",
+                      backgroundColor: "#ffd54f",
                       color: "white",
                       padding: "8px 16px",
                       "&:hover": {
-                        backgroundColor: "#5A9FC9",
+                        backgroundColor: "#ffd54f",
                       },
                     }}
                     variant="contained"
