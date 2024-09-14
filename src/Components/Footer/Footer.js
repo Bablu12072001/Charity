@@ -16,7 +16,7 @@ import logo from "../Image/Sacanner.png"; // Add your logo path here
 
 // Custom Box for Footer Section
 const FooterContainer = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
+  backgroundColor: 'black',
   color: theme.palette.common.white,
   padding: "40px 0",
   position: "relative",

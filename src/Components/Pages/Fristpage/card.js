@@ -11,6 +11,18 @@ import {
 import image1 from "../../Image/img17.avif";
 import image2 from "../../Image/img18.jpg";
 import image3 from "../../Image/img2.jpg";
+import image4 from "../../Image/img17.avif";
+import image5 from "../../Image/img18.jpg";
+import image6 from "../../Image/img2.jpg";
+import image7 from "../../Image/img17.avif";
+import image8 from "../../Image/img18.jpg";
+import image9 from "../../Image/img2.jpg";
+import image10 from "../../Image/img17.avif";
+import image11 from "../../Image/img18.jpg";
+import image12 from "../../Image/img2.jpg";
+import image13 from "../../Image/img17.avif";
+import image14 from "../../Image/img18.jpg";
+import image15 from "../../Image/img2.jpg";
 
 // Card data
 const CardData = [
@@ -34,6 +46,90 @@ const CardData = [
     detail:
       "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
     img: image3,
+  },
+  {
+    id: 4,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image4,
+  },
+  {
+    id: 5,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image5,
+  },
+  {
+    id: 6,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image6,
+  },
+  {
+    id: 7,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image7,
+  },
+  {
+    id: 8,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image8,
+  },
+  {
+    id: 9,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image9,
+  },
+  {
+    id: 10,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image10,
+  },
+  {
+    id: 11,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image11,
+  },
+  {
+    id: 12,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image12,
+  },
+  {
+    id: 13,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image13,
+  },
+  {
+    id: 14,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image14,
+  },
+  {
+    id: 15,
+    title: "Work During the Pandemic",
+    detail:
+      "Our founder, Sonu Sood, became a support system to countless families during the pandemic.",
+    img: image15,
   },
 ];
 

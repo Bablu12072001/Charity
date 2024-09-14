@@ -19,7 +19,7 @@ const Title = styled(Typography)(({ theme }) => ({
   fontWeight: "bold",
   textAlign: "center",
   fontSize: "2rem",
-  color: theme.palette.primary.main,
+  color: 'black',
 }));
 
 const StyledList = styled(List)(({ theme }) => ({
@@ -44,7 +44,7 @@ const StyledListItem = styled(ListItem)(({ theme }) => ({
     width: "8px",
     height: "8px",
     borderRadius: "50%",
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: 'black',
     display: "inline-block",
     marginRight: theme.spacing(1),
   },
@@ -71,12 +71,12 @@ const campaigns = [
 const AbutUs = () => {
   return (
     <>
-      <Container mt={10}>
+      <Container mt={10} sx={{ color: 'black' }} >
         <Title>Our Campaigns and Initiatives</Title>
-        <StyledList>
+        <StyledList sx={{ backgroundColor: "#fff3e0" }}>
           {campaigns.map((campaign, index) => (
-            <StyledListItem key={index}>
-              <ListItemText primary={campaign} />
+            <StyledListItem key={index} sx={{ color: 'black' }}>
+              <ListItemText primary={campaign} sx={{ color: 'black' }} />
             </StyledListItem>
           ))}
         </StyledList>

@@ -118,11 +118,11 @@ function Cards() {
           sx={{
             borderRadius: "30px",
             padding: "10px 20px",
-            backgroundColor: "#6EC1E4",
-            color: "white",
+            backgroundColor: "#ffd54f",
+            color: "black",
             fontWeight: "bold",
             "&:hover": {
-              backgroundColor: "#4a9ec1",
+              backgroundColor: "#ffe082",
             },
           }}
           variant="contained"

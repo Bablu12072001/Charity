@@ -5,6 +5,7 @@ import {
   Paper,
   List,
   ListItemText,
+  Button,
 } from "@mui/material";
 import React from "react";
 import image1 from "../../Image/img16.webp";
@@ -13,7 +14,7 @@ import image3 from "../../Image/img18.jpg";
 
 function Vision() {
   return (
-    <Box sx={{ padding: 2 }}>
+    <Box sx={{ padding: 2, background: 'linear-gradient(to right,#fff8e1,#FFFF)' }}>
       <Grid container spacing={2} justifyContent="center" alignItems="center">
         <Grid item xs={12} sm={6} md={4} lg={3} sx={{ padding: 2 }}>
           <Typography variant="body1" component="div">
@@ -26,6 +27,21 @@ function Vision() {
             making constant efforts to raise awareness, provide care for those
             in need, and encourage many more to join us in serving humanity.
           </Typography>
+          <Button
+            variant="contained"
+            sx={{
+              mt: 4,
+              borderRadius: "20px",
+              backgroundColor: "#ffd54f",
+              color: "black",
+              padding: "10px 20px",
+              "&:hover": {
+                backgroundColor: "#ffe082",
+              },
+            }}
+          >
+            Read More
+          </Button>
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Paper elevation={3} sx={{ padding: 1 }}>
@@ -48,6 +64,21 @@ function Vision() {
             making constant efforts to raise awareness, provide care for those
             in need, and encourage many more to join us in serving humanity.
           </Typography>
+          <Button
+            variant="contained"
+            sx={{
+              mt: 4,
+              borderRadius: "20px",
+              backgroundColor: "#ffd54f",
+              color: "black",
+              padding: "10px 20px",
+              "&:hover": {
+                backgroundColor: "#ffe082",
+              },
+            }}
+          >
+            Read More
+          </Button>
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Paper elevation={3} sx={{ padding: 1 }}>
@@ -70,6 +101,22 @@ function Vision() {
             making constant efforts to raise awareness, provide care for those
             in need, and encourage many more to join us in serving humanity.
           </Typography>
+          <Button
+            variant="contained"
+            sx={{
+              mt: 4,
+              borderRadius: "20px",
+              backgroundColor: "#ffd54f",
+              color: "black",
+              padding: "10px 20px",
+              "&:hover": {
+                backgroundColor: "#ffe082",
+
+              },
+            }}
+          >
+            Read More
+          </Button>
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Paper elevation={3} sx={{ padding: 1 }}>

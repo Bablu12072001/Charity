@@ -3,7 +3,7 @@ import { Container, Typography, Button, Box } from "@mui/material";
 
 function Accelerate() {
   return (
-    <Container maxWidth="md" sx={{ mt: 5, mb: 5 }}>
+    <Container maxWidth="md" sx={{ mt: 5, mb: 5, background: 'linear-gradient(to right,#ffe0b2,#FFFF)' }}>
       <Box
         sx={{
           display: "flex",
@@ -11,6 +11,7 @@ function Accelerate() {
           alignItems: "center",
           flexDirection: "column",
           textAlign: "center", // Center-align text for smaller screens
+
         }}
       >
         <Typography
